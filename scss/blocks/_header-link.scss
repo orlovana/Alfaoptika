@@ -1,0 +1,52 @@
+.header-link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #808080;
+
+    &:not(:last-child){
+        margin-right: 20px;
+    }
+
+    svg {
+        fill: gray;
+    }
+
+
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+
+        svg {
+            fill: $blue; 
+        //     stroke: $blue; 
+        }
+    }
+
+}
+
+.header-link_icon {
+    position: relative;
+    width: 21px;
+    height: 21px;
+    margin-right: 5px;
+}
+
+.header-link--notify .header-link_icon::after {
+    position: absolute; // сдвигается относительно иконуи корзины
+    top: -8px; // расстояние вверх от корзины до синего круга 2 пикселя и плюс размеры круга 6 
+    right: -7px; // расстояние вправа от от корзины до синего круга 1 пиксель и плюс размеры круга 6 
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #1875f0;
+    border-radius: 50%;
+}
+
+.header-link_text {
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 2.3; // 2.3=30пт (высота строки из фотошопа)/13пт (размер шрифта из фотошоп, он же fjnt-size) 
+    
+}

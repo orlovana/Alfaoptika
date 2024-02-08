@@ -1,0 +1,30 @@
+.nav-footer {
+
+}
+
+.nav_footer_list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav_footer_list-item {
+    padding: 0;
+    margin: 0;
+    & + & {
+        margin-left: 60px;
+    }
+}
+
+.nav_footer_link {
+    color: #666666;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.88;
+
+    &:hover {
+        color: $blue;
+        text-decoration: none;
+    }
+}
